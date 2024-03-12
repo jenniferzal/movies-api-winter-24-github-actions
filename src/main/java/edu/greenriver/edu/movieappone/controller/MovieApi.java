@@ -35,7 +35,7 @@ public class MovieApi
     @GetMapping("all")
     public ResponseEntity<List<Movie>> all()
     {
-        return new ResponseEntity<>(/*service.all()*/ null, HttpStatus.OK);
+        return new ResponseEntity<>(service.all(), HttpStatus.OK);
     }
 
 
