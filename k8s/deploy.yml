@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: movies-deployment
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      chapter: sdev372
+  template:
+    metadata:
+      labels:
+        chapter: sdev372
+    spec:
+      containers:
+        - name: movies-container
+          image: jenniferzal/movie-api
+          ports:
+            - containerPort: 3000

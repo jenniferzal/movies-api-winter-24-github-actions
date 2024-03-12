@@ -1,0 +1,81 @@
+html {
+    background-color: darkcyan;
+}
+
+body {
+    background-color: beige;
+    width: 1000px;
+    margin: auto; /*center the page*/
+
+    h1 {
+        font-size: 3em;
+        text-align: center;
+        border-bottom: 2px solid darkcyan;
+        padding: 10px 0;
+    }
+}
+
+.movie {
+    border: 1px solid darkcyan;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 200px;
+    background-color: #deffff;
+
+    h2 {
+        font-size: 1.2em;
+        color: #014a4a;
+        margin: 6px 0;
+        font-weight: bold;
+    }
+
+    p {
+        margin: 4px 0;
+    }
+}
+
+#movies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+form {
+    padding: 20px;
+    margin: auto;
+    width: 50%;
+    background-color: darkcyan;
+    color: beige;
+    border-radius: 10px;
+    border: 2px solid #002727;
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        label {
+            margin: 4px 0;
+
+        }
+
+        input {
+            margin: 4px 0;
+            padding: 4px 12px;
+        }
+    }
+
+    button {
+        margin-top: 6px;
+        background-color: beige;
+        border: 1px solid black;
+        padding: 4px 6px;
+
+        &:hover {
+            background-color: beige;
+        }
+    }
+}
